@@ -1,0 +1,293 @@
+{
+    "sanpham" :[
+        {
+            "matc":"SP_TC1",
+            "masp": "MASP1",
+            "tensp": "sản phẩm 1",
+            "loai_thuc_don":"select",
+            "nhom_hang":"select",
+            "don_vi_tinh":"select",
+            "in_che_bien":"select",
+            "trending":"check",
+            "ban_mang_di":"check",
+            "loaisp":"check",
+            "bang_gia":"select",
+            "gia": "1000",
+            "ky_vong": "next_page"
+        },
+        {
+            "matc":"SP_TC1",
+            "masp": "",
+            "tensp": "sản phẩm 2",
+            "loai_thuc_don":"select",
+            "nhom_hang":"select",
+            "don_vi_tinh":"select",
+            "in_che_bien":"select",
+            "trending":"check",
+            "ban_mang_di":"check",
+            "loaisp":"check",
+            "bang_gia":"select",
+            "gia": "1000",
+            "ky_vong": "un_next_page"
+        },
+        {
+            "matc":"SP_TC3",
+            "masp": "MASP3",
+            "tensp": "",
+            "loai_thuc_don":"select",
+            "nhom_hang":"select",
+            "don_vi_tinh":"select",
+            "in_che_bien":"select",
+            "trending":"check",
+            "ban_mang_di":"check",
+            "loaisp":"check",
+            "bang_gia":"select",
+            "gia": "1000",
+            "ky_vong": "un_next_page"
+        },
+        {
+            "matc":"SP_TC4",
+            "masp": "MASP4",
+            "tensp": "sản phẩm 4",
+            "loai_thuc_don":"unselect",
+            "nhom_hang":"select",
+            "don_vi_tinh":"select",
+            "in_che_bien":"select",
+            "trending":"check",
+            "ban_mang_di":"check",
+            "loaisp":"check",
+            "bang_gia":"select",
+            "gia": "1000",
+            "ky_vong": "next_page"
+        },
+        {
+            "matc":"SP_TC5",
+            "masp": "MASP5",
+            "tensp": "sản phẩm 5",
+            "loai_thuc_don":"select",
+            "nhom_hang":"unselect",
+            "don_vi_tinh":"select",
+            "in_che_bien":"select",
+            "trending":"check",
+            "ban_mang_di":"check",
+            "loaisp":"check",
+            "bang_gia":"select",
+            "gia": "1000",
+            "ky_vong": "next_page"
+        },
+        {
+            "matc":"SP_TC6",
+            "masp": "MASP6",
+            "tensp": "sản phẩm 6",
+            "loai_thuc_don":"select",
+            "nhom_hang":"select",
+            "don_vi_tinh":"unselect",
+            "in_che_bien":"select",
+            "trending":"check",
+            "ban_mang_di":"check",
+            "loaisp":"check",
+            "bang_gia":"select",
+            "gia": "1000",
+            "ky_vong": "next_page"
+        },
+        {
+            "matc":"SP_TC7",
+            "masp": "MASP7",
+            "tensp": "sản phẩm 7",
+            "loai_thuc_don":"select",
+            "nhom_hang":"select",
+            "don_vi_tinh":"select",
+            "in_che_bien":"unselect",
+            "trending":"check",
+            "ban_mang_di":"check",
+            "loaisp":"check",
+            "bang_gia":"select",
+            "gia": "1000",
+            "ky_vong": "next_page"
+        },
+        {
+            "matc":"SP_TC8",
+            "masp": "MASP8",
+            "tensp": "sản phẩm 8",
+            "loai_thuc_don":"select",
+            "nhom_hang":"select",
+            "don_vi_tinh":"select",
+            "in_che_bien":"select",
+            "trending":"uncheck",
+            "ban_mang_di":"check",
+            "loaisp":"check",
+            "bang_gia":"select",
+            "gia": "1000",
+            "ky_vong": "next_page"
+        },
+        {
+            "matc":"SP_TC9",
+            "masp": "MASP9",
+            "tensp": "sản phẩm 9",
+            "loai_thuc_don":"select",
+            "nhom_hang":"select",
+            "don_vi_tinh":"select",
+            "in_che_bien":"select",
+            "trending":"check",
+            "ban_mang_di":"uncheck",
+            "loaisp":"check",
+            "bang_gia":"select",
+            "gia": "1000",
+            "ky_vong": "next_page"
+        },
+        {
+            "matc":"SP_TC10",
+            "masp": "MASP10",
+            "tensp": "sản phẩm 10",
+            "loai_thuc_don":"select",
+            "nhom_hang":"select",
+            "don_vi_tinh":"select",
+            "in_che_bien":"select",
+            "trending":"check",
+            "ban_mang_di":"check",
+            "loaisp":"uncheck",
+            "bang_gia":"select",
+            "gia": "1000",
+            "ky_vong": "next_page"
+        },
+        {
+            "matc":"SP_TC11",
+            "masp": "MASP11",
+            "tensp": "sản phẩm 11",
+            "loai_thuc_don":"select",
+            "nhom_hang":"select",
+            "don_vi_tinh":"select",
+            "in_che_bien":"select",
+            "trending":"check",
+            "ban_mang_di":"check",
+            "loaisp":"check",
+            "bang_gia":"unselect",
+            "gia": "1000",
+            "ky_vong": "next_page"
+        },
+        {
+            "matc":"SP_TC12",
+            "masp": "MASP12",
+            "tensp": "sản phẩm 12",
+            "loai_thuc_don":"select",
+            "nhom_hang":"select",
+            "don_vi_tinh":"select",
+            "in_che_bien":"select",
+            "trending":"check",
+            "ban_mang_di":"check",
+            "loaisp":"check",
+            "bang_gia":"select",
+            "gia": "0",
+            "ky_vong": "next_page"
+        },
+        {
+            "matc":"SP_TC14",
+            "masp": "$@#$$#@",
+            "tensp": "$@#$@!#$@#",
+            "loai_thuc_don":"select",
+            "nhom_hang":"select",
+            "don_vi_tinh":"select",
+            "in_che_bien":"select",
+            "trending":"check",
+            "ban_mang_di":"check",
+            "loaisp":"check",
+            "bang_gia":"select",
+            "gia": "0",
+            "ky_vong": "un_next_page"
+        },
+        {
+            "matc":"SP_TC15",
+            "masp": "        ",
+            "tensp": "       ",
+            "loai_thuc_don":"select",
+            "nhom_hang":"select",
+            "don_vi_tinh":"select",
+            "in_che_bien":"select",
+            "trending":"check",
+            "ban_mang_di":"check",
+            "loaisp":"check",
+            "bang_gia":"select",
+            "gia": "0",
+            "ky_vong": "un_next_page"
+        }
+        
+    ],
+
+    "nhom_sp" : [
+        {
+            "matc":"NSP_TC1",
+            "ma_phan_nhom": "Mpn1",
+            "ten_phan_nhom": "phân nhóm 1",
+            "thu_tu": "1",
+            "ky_vong": "next_page"
+        },
+        {
+            "matc":"NSP_TC2",
+            "ma_phan_nhom": "Mpn2",
+            "ten_phan_nhom": "phân nhóm 2",
+            "thu_tu": "",
+            "ky_vong": "next_page"
+        },
+        {
+            "matc":"NSP_TC3",
+            "ma_phan_nhom": "",
+            "ten_phan_nhom": "phân nhóm 3",
+            "thu_tu": "3",
+            "ky_vong": "un_next_page"
+        },
+        
+        {
+            "matc":"NSP_TC4",
+            "ma_phan_nhom": "Mpn4",
+            "ten_phan_nhom": "",
+            "thu_tu": "4",
+            "ky_vong": "un_next_page"
+        },
+                
+        {
+            "matc":"NSP_TC5",
+            "ma_phan_nhom": "Mpn4",
+            "ten_phan_nhom": "",
+            "thu_tu": "",
+            "ky_vong": "un_next_page"
+        },
+        
+        {
+            "matc":"NSP_TC6",
+            "ma_phan_nhom": "",
+            "ten_phan_nhom": "phan nhom 5",
+            "thu_tu": "",
+            "ky_vong": "un_next_page"
+        },
+        {
+            "matc":"NSP_TC7",
+            "ma_phan_nhom": "",
+            "ten_phan_nhom": "",
+            "thu_tu": "7",
+            "ky_vong": "un_next_page"
+        },
+        {
+            "matc":"NSP_TC8",
+            "ma_phan_nhom": "",
+            "ten_phan_nhom": "",
+            "thu_tu": "",
+            "ky_vong": "un_next_page"
+        },
+        {
+            "matc":"NSP_TC9",
+            "ma_phan_nhom": "%$#@!$@!$@#$",
+            "ten_phan_nhom": "%$#@!$@!$@#$",
+            "thu_tu": "",
+            "ky_vong": "un_next_page"
+        },
+        
+        {
+            "matc":"NSP_TC10",
+            "ma_phan_nhom": "Mpn10",
+            "ten_phan_nhom": "phân nhóm 10",
+            "thu_tu": "-1",
+            "ky_vong": "un_next_page"
+        }
+    
+    ]
+}

@@ -1,65 +1,21 @@
 import time
+import json
 import help
 from help import check_btn_nextpage
-list = [
-    {
-        "ma_phan_nhom": 'pn1',
-        "ten_phan_nhom": 'phan nhom 1',
-        "thu_tu": '',
-        "ky_vong": 'next_page'
-    },
-  
-    {
-        "ma_phan_nhom": '',
-        "ten_phan_nhom": '',
-        "thu_tu": '',
-        "ky_vong": 'un_next_page'
-    },
-  
-    {
-        "ma_phan_nhom": '',
-        "ten_phan_nhom": 'phân nhóm 3',
-        "thu_tu": '3',
-        "ky_vong": 'un_next_page'
-    },
-    
-    {
-        "ma_phan_nhom": 'pn4',
-        "ten_phan_nhom": '',
-        "thu_tu": '4',
-        "ky_vong": 'un_next_page'
-    },
-    
-    {
-        "ma_phan_nhom": '%$#@!$@!$@#$',
-        "ten_phan_nhom": 'phan nhom 5',
-        "thu_tu": '',
-        "ky_vong": 'un_next_page'
-    },
-    
-    {
-        "ma_phan_nhom": 'pn6',
-        "ten_phan_nhom": '%$#@!$@!$@#$',
-        "thu_tu": '',
-        "ky_vong": 'un_next_page'
-    },
-    
-    {
-        "ma_phan_nhom": 'pn7',
-        "ten_phan_nhom": 'phan nhom 7',
-        "thu_tu": '-1',
-        "ky_vong": 'un_next_page'
-    },
-
-]
+f = open('D:/Nam4 BY Me/testing/auto test/src/sanPham/data.json', encoding='utf-8')
+list = json.load(f)
+list = list['nhom_sp']
 
 def add(driver):
-   
     print('========= Đang thêm SP =============')
+
+    help.create_file_result('sanpham',"\n=========================== THÊM NHÓM SẢN PHẨM=====================\n")
+    driver.get ("https://banhang.upgo.vn/#/category/707416b3-2fc2-477f-aa52-f30c14684d86")
+
     driver.get ("https://banhang.upgo.vn/#/category/collection")
     time.sleep(3)
-    text ="%15s" %('MÃ PHÂN NHÓM') +'\t|'+ "%15s" %('TÊN PHÂN NHÓM') +'\t|'+ "%15s" %('THỨ TỰ') +'\t|'+"PASS"
-    help.create_file_result('kq_nhom_sp',text)
+    text ="%15s" %('MÃ TESTCASE') +'\t┊'+ "%15s" %('MÃ PHÂN NHÓM')+'\t┊'+ "%15s" %('TÊN PHÂN NHÓM') +'\t┊'+ "%15s" %('THỨ TỰ') +'\t┊'+ "%15s" %('KỲ VỌNG') +'\t┊'+"%12s" %('KẾT QUẢ') 
+    help.create_file_result('sanpham',text)
     help.createLine()
     for sp in list:
         # nhấn thêm
@@ -67,23 +23,15 @@ def add(driver):
         time.sleep(1)   
         isNextPage = enterData(driver,sp)
         if(isNextPage==True and sp['ky_vong']=='next_page'):
-            text ="%15s" %(sp['ma_phan_nhom']) +'\t|'+ "%15s" %(sp['ten_phan_nhom']) +'\t|'+ "%15s" %(sp['thu_tu']) +'\t|'+"PASS"
-            help.create_file_result('kq_nhom_sp',text)
-            help.createLine()
+            dataText(sp, "PASS")
         elif(isNextPage==False and sp['ky_vong']=='un_next_page'):
-            text ="%15s" %(sp['ma_phan_nhom']) +'\t|'+ "%15s" %(sp['ten_phan_nhom']) +'\t|'+ "%15s" %(sp['thu_tu']) +'\t|'+"PASS"
-            help.create_file_result('kq_nhom_sp',text)
-            help.createLine()
+            dataText(sp, "PASS")
             driver.get ("https://banhang.upgo.vn/#/category/collection")
             time.sleep(3)
         elif(isNextPage==True and sp['ky_vong']=='un_next_page'):
-            text ="%15s" %(sp['ma_phan_nhom']) +'\t|'+ "%15s" %(sp['ten_phan_nhom']) +'\t|'+ "%15s" %(sp['thu_tu']) +'\t|'+"FAIL"
-            help.create_file_result('kq_nhom_sp',text)
-            help.createLine()
+            dataText(sp, "FAIL")
         elif(isNextPage==False and sp['ky_vong']=='next_page'):
-            text ="%15s" %(sp['ma_phan_nhom']) +'\t|'+ "%15s" %(sp['ten_phan_nhom']) +'\t|'+ "%15s" %(sp['thu_tu']) +'\t|'+"FAIL"
-            help.create_file_result('kq_nhom_sp',text)
-            help.createLine()
+            dataText(sp, "FAIL")
             driver.get ("https://banhang.upgo.vn/#/category/collection")
             time.sleep(3)
 
@@ -99,3 +47,14 @@ def enterData(driver,sp):
     data ={"page":"https://banhang.upgo.vn/#/category/create","nextpage":"https://banhang.upgo.vn/#/category/collection"}
     check = check_btn_nextpage.check_btn_class_name(driver, data, 'p-button-success')
     return check
+
+def dataText(sp, status):
+    text =(
+    "%15s" %(sp['matc']) +'\t┊'+
+    "%15s" %(sp['ma_phan_nhom']) +'\t┊'+
+    "%15s" %(sp['ten_phan_nhom']) +'\t┊'+
+    "%15s" %(sp['thu_tu']) +'\t┊'+
+    "%15s" %(sp['ky_vong']) +'\t┊'+
+    "%12s" %(status) )
+    help.create_file_result('sanpham',text)
+    help.createLine()

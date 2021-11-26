@@ -12,17 +12,16 @@ def login(timeout):
     driver.find_element_by_id("username").send_keys(username)
     driver.find_element_by_id ("password").send_keys(password)
     driver.find_element_by_class_name("my-4").click()
-    time.sleep(timeout)
+    time.sleep(2)
     driver.get ("https://banhang.upgo.vn/#/item/list")
-    time.sleep(timeout)
+    time.sleep(2)
     try:
         res=  driver.find_elements_by_class_name("p-button-label")[0].text
         print('========================================')
-        print(res)
         if(res=='Thêm'):
             print ("LOGIN THÀNH CÔNG !")
         else:
             print("LOGIN KHÔNG THÀNH CÔNG !")
     except:
         print("LOGIN KHÔNG THÀNH CÔNG !")
-        driver.quit()
+    return driver
