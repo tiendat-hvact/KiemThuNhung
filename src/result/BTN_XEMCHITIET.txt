@@ -1,0 +1,1 @@
+BTN_XEMCHITIET=== Yêu cầu bấm nút button Xem chi tiết ở === https://banhang.upgo.vn/#/dashboard sẽ được chuyển đến  === https://banhang.upgo.vn/#/revenue ===  FAIL

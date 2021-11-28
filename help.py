@@ -69,7 +69,71 @@ class check_btn_nextpage():
             result =True
         return  result
 
+    def check_btn_class_names(driver,data,class_name,i):
+        page = data['page']
+        nextpage = data['nextpage']
+        # driver.get(page)
+        time.sleep(2)
+        print(class_name)
+        getsByClass(driver,class_name)[i].click()
+        time.sleep(2)
+        Url_Page = getCurrentURL(driver)
+        print(Url_Page)
+        result = False
+        if Url_Page == nextpage :
+            result =True
+        return  result
+
+    def check_btn_class_name2(driver,data,class_name):
+        page = data['page']
+        nextpage = data['nextpage']
+        # driver.get(page)
+        time.sleep(2)
+        print(class_name)
+        getsByClass(driver,class_name)[0].click()
+        time.sleep(3)
+        Url_Page = getCurrentURL(driver)
+        print(Url_Page)
+        result = False
+        if Url_Page == nextpage :
+            result =True
+        return  result
+    
+    def check_btn_class_name3(driver,data,class_name):
+        page = data['page']
+        nextpage = data['nextpage']
+        # driver.get(page)
+        time.sleep(2)
+        print(class_name)
+        getsByClass(driver,class_name)[3].click()
+        time.sleep(3)
+        Url_Page = getCurrentURL(driver)
+        print(Url_Page)
+        result = False
+        if Url_Page == nextpage :
+            result =True
+        return  result
+
 # tao khoang trắng sau text khi ghi file
 def createLine():
     text ="┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈"
     create_file_result('sanpham',text)
+def createLine2():
+    text ="-----------------------------------------------------------------------------------------------"
+    create_file_result('kq_addCoso',text)
+
+def createLineEdit():
+    text ="-----------------------------------------------------------------------------------------------"
+    create_file_result('kq_editCoso',text)
+
+def createLineNewKhuVuc():
+    text ="-----------------------------------------------------------------------------------------------"
+    create_file_result('kq_addKhuVuc',text)
+
+def createLineNewFastKhuVuc():
+    text ="-----------------------------------------------------------------------------------------------"
+    create_file_result('kq_addFastKhuVuc',text)
+
+def createLineEditKV():
+    text ="-----------------------------------------------------------------------------------------------"
+    create_file_result('kq_editKhuVuc',text)

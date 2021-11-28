@@ -1,0 +1,2 @@
+     TK_MaHD 61	|      HD0000061	|hiện MÃ Hóa đơn lên đầu list	|PASS
+      TK_MaHD 6	|       HD000006	|hiện MÃ Hóa đơn lên đầu list	|FAIL

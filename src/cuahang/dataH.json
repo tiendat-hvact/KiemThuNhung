@@ -1,0 +1,49 @@
+{
+  "newCoso" :[
+    {"ID":"CSBH_aFULL","macoso":"YT1","tencoso":"co so AAA1", "sdtcoso":"0934127238", "tpcoso":"Hà Nội", "huyencoso":"Thạch Thất", "xacoso":"Thạch Hoà", "expected":"nextPage"},
+    {"ID":"CSBH_aMCS01","macoso":"%^@$AAA","tencoso":"co so AAA1", "sdtcoso":"0934127238", "tpcoso":"Hà Nội", "huyencoso":"Thạch Thất", "xacoso":"Thạch Hoà", "expected":"un_nextPage"},
+    {"ID":"CSBH_aMCS02","macoso":"","tencoso":"co so AAA1", "sdtcoso":"0934127238", "tpcoso":"Hà Nội", "huyencoso":"Thạch Thất", "xacoso":"Thạch Hoà","expected":"nextPage"},
+    {"ID":"CSBH_aTCS02","macoso":"VAA1","tencoso":"%@!#Co so XXY2", "sdtcoso":"0934127238", "tpcoso":"Hà Nội", "huyencoso":"Thạch Thất", "xacoso":"Thạch Hoà", "expected":"un_nextPage"},
+    {"ID":"CSBH_aSDT01","macoso":"AAA1","tencoso":"%!_$$Co soAAA1", "sdtcoso":"", "tpcoso":"Hà Nội", "huyencoso":"Thạch Thất", "xacoso":"Thạch Hoà","expected":"un_nextPage"},
+    {"ID":"CSBH_aSDT02","macoso":"AAA1","tencoso":"co so AAA1", "sdtcoso":"%$@0934127238", "tpcoso":"Hà Nội", "huyencoso":"Thạch Thất", "xacoso":"Thạch Hoà", "expected":"un_nextPage"}
+    ],
+  "addCosoMPTY" :[
+    {"ID":"CSBH_aMPTY","macoso":"","tencoso":"", "sdtcoso":"", "tpcoso":"", "huyencoso":"", "xacoso":"", "expected":"un_nextPage"},
+    {"ID":"CSBH_aDCHI","macoso":"AAA1","tencoso":"co so AAA1", "sdtcoso":"0934127238", "tpcoso":"", "huyencoso":"", "xacoso":"", "expected":"un_nextPage"}
+    ],
+  "editCoso" :[
+    {"ID":"CSBH_eMCS01","macoso":"$@!ATS","tencoso":"co so AAA1", "sdtcoso":"", "tpcoso":"Hà Nội", "huyencoso":"Thạch Thất", "xacoso":"Thạch Hoà","expected":"un_nextPage"},
+  
+    {"ID":"CSBH_eMCS02","macoso":"","tencoso":"co so AAA1", "sdtcoso":"%$#0934127238", "tpcoso":"Hà Nội", "huyencoso":"Thạch Thất", "xacoso":"Thạch Hoà", "expected":"nextPage"},
+  
+    {"ID":"CSBH_eTCS01","macoso":"AAA1","tencoso":"!$!CosoAAA1", "sdtcoso":"0934127238", "tpcoso":"Hà Nội", "huyencoso":"Thạch Thất", "xacoso":"Thạch Hoà", "expected":"un_nextPage"},
+  
+    {"ID":"CSBH_eTCS02","macoso":"AAA1","tencoso":"", "sdtcoso":"0934127238", "tpcoso":"Hà Nội", "huyencoso":"Thạch Thất", "xacoso":"Thạch Hoà", "expected":"un_nextPage"},
+  
+    {"ID":"CSBH_eSDT01","macoso":"AAA1","tencoso":"Coso AAA1", "sdtcoso":"!#@$0934127238", "tpcoso":"Hà Nội", "huyencoso":"Thạch Thất", "xacoso":"Thạch Hoà", "expected":"un_nextPage"},
+  
+    {"ID":"CSBH_eSDT02","macoso":"AAA1","tencoso":"Coso AAA1", "sdtcoso":"", "tpcoso":"Hà Nội", "huyencoso":"Thạch Thất", "xacoso":"Thạch Hoà", "expected":"un_nextPage"}
+    ],
+  "newKhuvuc" :[
+      {"ID":"KV_aFULL","makhuvuc":"AAA1", "tenkhuvuc":"khu vuc AAA1", "expected":"nextPage"},
+      {"ID":"KV_aMKV01","makhuvuc":"$!@%AAA1", "tenkhuvuc":"khu vuc AAA1", "expected":"un_nextPage"},
+      {"ID":"KV_aMKV02","makhuvuc":"", "tenkhuvuc":"khu vuc AAA1", "expected":"un_nextPage"},
+      {"ID":"KV_aMPTY","makhuvuc":"", "tenkhuvuc":"", "expected":"un_nextPage"},
+      {"ID":"KV_aTKV01","makhuvuc":"AAA1", "tenkhuvuc":"", "expected":"un_nextPage"},
+      {"ID":"KV_aTKV02","makhuvuc":"AAA1", "tenkhuvuc":"%#$!Khu vucAAA", "expected":"un_nextPage"}
+      ],
+    "newFastKhuvuc" :[
+      {"ID":"KV_afFULL","makhuvuc":"BBB1","soluong":"1","expected":"nextPage"},
+      {"ID":"KV_afMKV01","makhuvuc":"","soluong":"1","expected":"un_nextPage"},
+      {"ID":"KV_afMKV02","makhuvuc":"%#$!AGAA","soluong":"1","expected":"un_nextPage"}
+      ],
+    "newFastKhuvucMPTY" :[
+      {"ID":"KV_afSL01","makhuvuc":"AGAA","soluong":"","expected":"un_nextPage"}
+      ],
+    "editKhuvucXX" :[
+      {"ID":"KV_eMKV01","makhuvuc":"%#$!VEWA", "tenkhuvuc":"khu vuc AAA1", "expected":"un_nextPage"},
+      {"ID":"KV_eMKV02","makhuvuc":"", "tenkhuvuc":"khu vuc AAA1", "expected":"un_nextPage"},
+      {"ID":"KV_eTKV01","makhuvuc":"VEWA", "tenkhuvuc":"@%&$khuvuc AJE1", "expected":"un_nextPage"},
+      {"ID":"KV_eTKV02","makhuvuc":"VEWA", "tenkhuvuc":"", "expected":"un_nextPage"}
+      ]
+}

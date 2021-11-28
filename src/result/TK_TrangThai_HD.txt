@@ -1,0 +1,3 @@
+       TrangThai_HD0	|          Hoàn thành	|Hiện Hiện list trạng thái hoạt động khi click	|PASS
+       TrangThai_HD1	|          Đang xử lý	|Hiện Hiện list trạng thái hoạt động khi click	|FAIL
+       TrangThai_HD2	|              Bị huỷ	|Hiện Hiện list trạng thái hoạt động khi click	|FAIL

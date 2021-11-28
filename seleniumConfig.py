@@ -2,7 +2,7 @@ import time
 from selenium import webdriver
 
 def login(timeout):
-    driver = webdriver.Chrome(executable_path="C:/Users/ASUS/Downloads/chromedriver_win32/chromedriver.exe")
+    driver = webdriver.Chrome(executable_path="C:/Users/ADMIN/Downloads/chromedriver_win32/chromedriver.exe")
     driver.get ("https://banhang.upgo.vn")
     print (driver.title  )
     time.sleep(timeout)

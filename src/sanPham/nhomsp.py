@@ -2,7 +2,7 @@ import time
 import json
 import help
 from help import check_btn_nextpage
-f = open('D:/Nam4 BY Me/testing/auto test/src/sanPham/data.json', encoding='utf-8')
+f = open('C:/Users/ADMIN/Documents/kiemthunhung/testing/src/sanPham/data.json', encoding='utf-8')
 list = json.load(f)
 list = list['nhom_sp']
 
@@ -10,7 +10,7 @@ def add(driver):
     print('========= Đang thêm SP =============')
 
     help.create_file_result('sanpham',"\n=========================== THÊM NHÓM SẢN PHẨM=====================\n")
-    driver.get ("https://banhang.upgo.vn/#/category/707416b3-2fc2-477f-aa52-f30c14684d86")
+    # driver.get ("https://banhang.upgo.vn/#/category/707416b3-2fc2-477f-aa52-f30c14684d86")
 
     driver.get ("https://banhang.upgo.vn/#/category/collection")
     time.sleep(3)

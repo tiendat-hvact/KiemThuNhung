@@ -1,0 +1,2 @@
+             ID	|          Mã HĐ	|                       Kỳ Vọng	|STATUS
+       btn_MaHD	|      HD0000061	|       Next đến trang chi tiết	|PASS

@@ -2,7 +2,7 @@ import time
 import json
 import help
 from help import check_btn_nextpage
-f = open('D:/Nam4 BY Me/testing/auto test/src/sanPham/data.json', encoding='utf-8')
+f = open('C:/Users/ADMIN/Documents/kiemthunhung/testing/src/sanPham/data.json', encoding='utf-8')
 list = json.load(f)
 list = list['sanpham']
 
@@ -56,23 +56,27 @@ def enterData(driver,sp):
 
     # select
     if(sp['loai_thuc_don']=='select'):
+        time.sleep(2)
         help.getsByClass(driver,'p-dropdown-trigger')[0].click()
         time.sleep(3)
         help.getsByClass(driver,'p-dropdown-item')[1].click()
 
     if(sp['nhom_hang']=='select'):
+        time.sleep(2)
         help.getsByClass(driver, 'p-autocomplete-dropdown')[0].click()
-        time.sleep(1)
+        time.sleep(2)
         help.getByClass(driver, 'p-autocomplete-item').click()
 
     if(sp['don_vi_tinh']=='select'):
+        time.sleep(2)
         help.getsByClass(driver, 'p-autocomplete-dropdown')[1].click()
-        time.sleep(1)
+        time.sleep(2)
         help.getByClass(driver, 'p-autocomplete-item').click()
 
     if(sp['in_che_bien']=='select'):
+        time.sleep(2)
         help.getsByClass(driver, 'p-autocomplete-dropdown')[2].click()
-        time.sleep(1)
+        time.sleep(2)
         help.getByClass(driver, 'p-autocomplete-item').click()
     
 
